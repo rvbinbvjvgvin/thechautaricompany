@@ -1,0 +1,127 @@
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100vh;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+  overflow-clip-box: hidden;
+}
+
+.container {
+  height: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  position: relative; /* Add this */
+  overflow: hidden; /* Add this */
+  margin: 20px 20px 20px 20px;
+  
+}
+
+
+.card {
+  width: 80px;
+  background-size: cover;
+  cursor: pointer;
+  background-color: black;
+  overflow: hidden;
+  border: white 1px solid;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  
+}
+.card:hover {
+  background-color: aliceblue;
+  animation: normal 2s ease-in-out;
+  color: #000000;
+  
+}
+
+.card > .row {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  transform: translate(-50%, -50%) rotate(90deg);
+  
+}
+
+.card > .row > .icon {
+  
+  color: white;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+ 
+  position:relative;
+}
+
+.card > .row > .description {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transition-delay: 0.3s;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) translateY(30px) rotate(90deg);
+  color: white;
+}
+
+.description p {
+  color: black;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+.input {
+  display: none;
+}
+
+.input:checked + label {
+  width: 600px;
+}
+
+.input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* .card[for="c1"] {
+  background-color: black;
+}
+
+.card[for="c2"] {
+  background-color: black;
+}
+
+.card[for="c3"] {
+  background-color: black;
+}
+
+.card[for="c4"] {
+  background-color: black;
+}
+.card[for="c5"] {
+  background-color: black;
+}
+
+.card[for="c6"] {
+  background-color: black;
+} */

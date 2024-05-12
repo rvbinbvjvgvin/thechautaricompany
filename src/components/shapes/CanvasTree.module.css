@@ -1,0 +1,13 @@
+.polygon-group:hover polygon:nth-child(odd) {
+    animation: collapse 1s forwards;
+  }
+  
+  .polygon-group:hover polygon:nth-child(even) {
+    animation: collapse 1s forwards;
+  }
+  
+  @keyframes collapse {
+    0% { transform: scale(1); }
+    50% { transform: scale(0); }
+    100% { transform: scale(1); }
+  }

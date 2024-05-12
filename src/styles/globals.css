@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  overflow-x: hidden;  /* Firefox */
+}
+ h1,header{
+  font-family: 'chautari', sans-serif;
+  transform: perspective(1px) translateZ(0);
+  box-decoration-break: unset;
+ }
+
+ p, span, Text{
+  font-family: 'chautari', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 100;
+  letter-spacing: normal;
+  
+
+ }
+
+ 
+
+
+@font-face {
+  font-family: 'chautari';
+  src: url(../../public/fonts/Chautari.ttf);
+
+}
+
+@font-face {
+  font-family: 'Elianto';
+  src: url(../../public/fonts/Elianto.ttf);
+}
